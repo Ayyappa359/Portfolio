@@ -49,6 +49,11 @@ header{
     border-radius: 8px;
     cursor:pointer;
 }
+.hire_me:hover{
+    transform: translateY(-2px);
+    border-color:#808787;
+    box-shadow: 0 10px 25px rgba(114, 109, 103, 0.25);
+}
 .greetings{
     color:#808787;
     font-size:20px;
@@ -72,26 +77,95 @@ header{
 }
 .profile_wrap{
     position:relative;
-    height: 420px;
-    width: 420px;
+    height:420px;
+    width:420px;
 }
+
 .profile_backdrop{
-    position: relative;
-    top:0;
-    right:0;
-    width: 380px;
+    position:relative;
+    width:380px;
     height:380px;
     border-radius:50%;
-    background:#1f1f1f;
+    background:radial-gradient(circle at 35% 30%, #2a2a2a, #0d0d0d 70%);
+    border:1px solid #2a2a2a;
+    box-shadow: 0 0 60px rgba(208,116,19,0.15);
 }
-.profile_img{
-    position: absolute;
-    bottom:0;
-    left:0;
-    height: auto;
-    width: 340px;
-    z-index: 1;
+
+.glow_ring{
+    position:absolute;
+    top:-15px;
+    left:-15px;
+    width:410px;
+    height:410px;
+    border-radius:50%;
+    border:3px dashed #d07413;
+    opacity:0.4;
+    animation: spin 20s linear infinite;
 }
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+.floating_badge{
+    position:absolute;
+    background:#111111;
+    border:1px solid #d07413;
+    color:#d07413;
+    font-family:monospace;
+    font-weight:bold;
+    font-size:20px;
+    padding:12px 16px;
+    border-radius:10px;
+    box-shadow: 0 8px 20px rgba(208,116,19,0.25);
+    animation: float 4s ease-in-out infinite;
+}
+
+.badge_1{
+    top:20px;
+    right:-30px;
+    animation-delay:0s;
+}
+
+.badge_2{
+    bottom:40px;
+    left:-20px;
+    animation-delay:1.5s;
+}
+
+@keyframes float{
+    0%, 100%{ transform:translateY(0px); }
+    50%{ transform:translateY(-15px); }
+}
+
+.floating_dot{
+    position:absolute;
+    border-radius:50%;
+    background:#d07413;
+    opacity:0.6;
+}
+
+.dot_1{
+    width:14px;
+    height:14px;
+    top:60px;
+    left:-10px;
+}
+
+.dot_2{
+    width:10px;
+    height:10px;
+    bottom:100px;
+    right:0px;
+}
+
+.dot_3{
+    width:8px;
+    height:8px;
+    top:200px;
+    right:-25px;
+}   
 .hero{
     display:flex;
 }
@@ -119,6 +193,11 @@ header{
     border-radius: 8px;
     cursor:pointer;
 }
+.hire_hero:hover{
+    transform: translateY(-2px);
+    border-color:#808787;
+    box-shadow: 0 10px 25px rgba(114, 109, 103, 0.25);
+}
 .hero_resume{
     margin-left: 50px;
     margin-top: 50px;
@@ -132,4 +211,9 @@ header{
     color:white;
     border-color: #808787;
     cursor:pointer;
+}
+.hero_resume:hover{
+    transform: translateY(-2px);
+    border-color:#ff8801;
+    box-shadow: 0 10px 25px rgba(114, 109, 103, 0.25);
 }

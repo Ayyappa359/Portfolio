@@ -49,6 +49,11 @@ header{
     border-radius: 8px;
     cursor:pointer;
 }
+.hire_me:hover{
+    transform: translateY(-2px);
+    border-color:#808787;
+    box-shadow: 0 10px 25px rgba(114, 109, 103, 0.25);
+}
 .project_heading{
     color:white;
     margin-top: 70px;
