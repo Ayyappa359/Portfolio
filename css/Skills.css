@@ -1,0 +1,113 @@
+body{
+    margin:50px 50px 50px 50px;
+    background-color:#000000;
+    font-family:sans-serif;
+}
+.logo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: 25px;
+    background:linear-gradient(66deg, #d07413,#f4430d );
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right:50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_links{
+    font-weight:bold;
+    list-style:none;
+    display:flex;
+    font-size:18px;
+    gap:35px;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+.nav_links a{
+    text-decoration:none;
+    color:#808787;
+}
+.nav_links a:hover{
+    color:#d07413;
+}
+.nav_links a.active{
+    color:#d07413;
+}
+.hire_me{
+    font-size:14px;
+    font-weight:bold;
+    border:none;
+    padding:10px 20px;
+    background-color: #ff8801;
+    color:white;
+    border-radius: 8px;
+    cursor:pointer;
+}
+.skill_heading{
+    color:white;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align:center;
+    font-weight:600;
+}
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin:50px;
+}
+
+.skill_card{
+    background-color:#111111;
+    border:1px solid #2a2a2a;
+    border-radius:12px;
+    padding:30px 25px;
+    width:200px;
+    text-align:center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+}
+
+.skill_card:hover{
+    transform: translateY(-8px);
+    border-color:#d07413;
+    box-shadow: 0 10px 25px rgba(208, 116, 19, 0.25);
+}
+
+.skill_icon{
+    width:60px;
+    height:60px;
+    margin-bottom:15px;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.skill_card:hover .skill_icon{
+    filter: grayscale(0%);
+}
+
+.skill_title{
+    color:#808787;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:8px;
+    transition: color 0.3s ease;
+}
+
+.skill_card:hover .skill_title{
+    background:linear-gradient(66deg, #d07413,#f4430d );
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill_desc{
+    color:#606565;
+    font-size:14px;
+}

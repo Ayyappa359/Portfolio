@@ -1,0 +1,89 @@
+body{
+    margin:50px 50px 50px 50px;
+    background-color:#000000;
+    font-family:sans-serif;
+}
+.logo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: 25px;
+    background:linear-gradient(66deg, #d07413,#f4430d );
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right:50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_links{
+    font-weight:bold;
+    list-style:none;
+    display:flex;
+    font-size:18px;
+    gap:35px;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+.nav_links a{
+    text-decoration:none;
+    color:#808787;
+}
+.nav_links a:hover{
+    color:#d07413;
+}
+.nav_links a.active{
+    color:#d07413;
+}
+.hire_me{
+    font-size:14px;
+    font-weight:bold;
+    border:none;
+    padding:10px 20px;
+    background-color: #ff8801;
+    color:white;
+    border-radius: 8px;
+    cursor:pointer;
+}
+.title{
+    color:white;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align:center;
+    font-weight:600;
+}
+.about_me{
+    display:flex;
+}
+.profile_wrap{
+    position:relative;
+    height: 420px;
+    width: 420px;
+}
+.profile_backdrop{
+    position: relative;
+    top:0;
+    right:0;
+    width: 380px;
+    height:380px;
+    border-radius:50%;
+    background:#1f1f1f;
+    margin-top:70px;
+}
+.profile_img{
+    position: absolute;
+    bottom:0;
+    left:0;
+    height: auto;
+    width: 340px;
+    z-index: 1;
+}
+.about_me_info{
+    color:#808787;
+    margin-top:50px;
+    margin-left:50px;
+}
