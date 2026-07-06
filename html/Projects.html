@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/Projects.css">
 </head>
 <body>
-    
+    <header>
+    <div class="logo">AK</div>
+     <nav>
+        <ul class="nav_links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html" class="active">Projects</a></li>
+            <li><a href="Contact.html">Contact me</a></li>
+        </ul>
+    </nav>
+    <button class="hire_me" onlick="">Hire Me</button>
+   </header>
+   <div class="project_heading">My Projects</div>
+   <section class="projects">
+        <div class="project_card" onclick="openModal('project1')">
+            <img src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/1a5327235ab8832b7699597337de52c09f705a9f" alt="Project 1" class="project_img">
+            <h3 class="project_title">Portfolio Website</h3>
+            <p class="project_tag">Personal project</p>
+        </div>
+        <div class="project_card project_card_upcoming">
+            <div class="upcoming_icon">+</div>
+            <h3 class="project_title">More Coming Soon</h3>
+            <p class="project_tag">New projects in progress</p>
+        </div>
+   </section>
+   <div class="modal_overlay" id="project1">
+    <div class="modal_box">
+        <span class="modal_close" onclick="closeModal('project1')">&times;</span>
+        <h2 class="modal_title">Portfolio Website</h2>
+        <p class="modal_desc">Built a Personal Portfolio Website to showcase my skills and projects and to gain hands on experience with the respective tech stack.</p>
+        <div class="modal_techstack">
+            <span class="tech_tag">HTML</span>
+            <span class="tech_tag">CSS</span>
+            <span class="tech_tag">JavaScript</span>
+        </div>
+        <div class="modal_links">
+            <a href="#" target="_blank" class="modal_link">Live URL</a>
+            <a href="https://github.com/Ayyappa359/Portfolio" target="_blank" class="modal_link">GitHub</a>
+        </div>
+        <p class="modal_credits">Credits: Icons by <a href="https://devicon.dev" target="_blank" class="credit_link">Devicon</a>, UI from <a href="https://www.figma.com/community/file/1351551318943737601" target="_blank" class="credit_link">Figma</a>.</p>
+    </div>
+</div>
+   <script>
+    function openModal(id){
+        document.getElementById(id).style.display = "flex";
+    }
+    function closeModal(id){
+        document.getElementById(id).style.display = "none";
+    }
+    // close modal if clicking outside the box
+    window.onclick = function(event){
+        if(event.target.classList.contains("modal_overlay")){
+            event.target.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
